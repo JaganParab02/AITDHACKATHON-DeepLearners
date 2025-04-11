@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Cookie Extractor",
+    "version": "1.0",
+    "description": "Extract your li_at cookie from LinkedIn",
+    "permissions": ["cookies", "tabs", "storage", "activeTab"],
+    "host_permissions": ["https://www.linkedin.com/"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    }
+  }
